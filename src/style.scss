@@ -96,4 +96,10 @@ input, select {
     flex-direction: column;
   }
 
+  .RadioOptions {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
 }
