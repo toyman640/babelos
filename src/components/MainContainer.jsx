@@ -120,7 +120,7 @@ const MainPage  = () => {
                   <input type="file" name="" id="" />
                   <p>PNG or JPG (max. 5MB)</p>
                 </div>
-                <div>
+                <div className="ButtonDiv">
                   <button>Back</button>
                    <button>Continue</button>
                 </div>
