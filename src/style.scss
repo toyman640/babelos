@@ -1,3 +1,27 @@
+.FormCover {
+ display: flex;
+ flex-direction: column;
+}
+
+input, select {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 8px 12px 8px 12px;
+}
+
+.ButtonDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AddCrop {
+  padding: 6px 8px;
+  background-color: #f6fffc;
+  color: #5ebaa2;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
 @media (min-width: 768px) {
   body {
     display: block !important;
@@ -7,15 +31,26 @@
     width: 100%;
   }
 
+  .SideImage {
+    max-width: 100%;
+    max-height: 99vh;
+    
+  }
+
   .MainPage {
     display: flex;
     width: 100%;
+    max-height: 99.9vh;
   }
 
   .ImageSection,
   .FormSection {
     width: 50%;
-    border: 1px solid red;
+  }
+
+  .FormSection {
+    overflow-y: auto;
+    max-height: calc(100vh - 30px);
   }
 
   .InnerFormSection {
@@ -26,7 +61,58 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid red;
-
   }
+
+  .TOp {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 0.8em;
+  }
+
+  .TopLeft {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+  }
+
+  .BackImage {
+    margin-left: 10%;
+  }
+
+  .ProgressDiv {
+   margin-left: 2%;
+   margin-right: 3%;
+  }
+
+  .NameCover {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .FormCover {
+    width: 45%;
+  }
+
+  .FormWrap {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+
+  .OtherFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RadioOptions {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .FingerCont {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
