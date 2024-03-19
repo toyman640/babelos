@@ -2,6 +2,7 @@ import React from "react";
 import FourthImage from '../assets/Frame4.svg';
 import BackButton from '../assets/back-Icon.svg';
 import Progress4 from '../assets/Progress4.svg';
+import AddCrop from '../assets/add-crop.svg'
 
 const FourthForm = () => {
   return (
@@ -46,10 +47,33 @@ const FourthForm = () => {
                       <option value="">Yam</option>
                     </select>
                   </div>
+                  <div className="NameCover">
+                    <div className="FormCover FormWrap" >
+                      <label htmlFor="startmonth">Start Month</label>
+                      <select name="startmonth" id="">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                      </select>
+                    </div>
+                    <div className="FormCover FormWrap">
+                      <label htmlFor="endsmonth">End Month</label>
+                      <select name="endmonth" id="">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <button className="AddCrop"><img src={AddCrop} alt="Add Crop Icon" />Add another crop</button>
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="farmDocuments">Upload farm documents</label>
+                  <input type="file" name="farmDocuments" id="FarmFIle" />
                 </div>
                 <div className="ButtonDiv">
                   <button>Back</button>
-                  <button>Continue</button>
+                  <button>Add Farm</button>
                 </div>
               </form>
             </div>
